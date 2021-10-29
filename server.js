@@ -5,6 +5,7 @@ const Article = require('./DB_models/article') // Database model
 const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
+app.use(timeout('5s'))
 
 //Importar variables de entorno
 require('dotenv').config({path: 'variables.env'})

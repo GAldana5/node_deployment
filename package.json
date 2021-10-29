@@ -11,6 +11,7 @@
   "author": "Gabriela Aldana",
   "license": "ISC",
   "dependencies": {
+    "connect-timeout": "^1.9.0",
     "dompurify": "^2.3.3",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
