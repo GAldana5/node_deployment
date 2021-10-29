@@ -25,11 +25,6 @@ app.get('/', async (req, res) =>{
 })
 app.use('/articles', articleRouter)
 
-//Variables y puerto de LocalHost
-const host = process.env.HOST || '0.0.0.0';
-const port = process.env.PORT || 3000;
 
 // Port
-app.listen(port, host, () => {
-    console.log('The server is running correctly');
-});
+app.listen(process.env.PORT || 3000)
