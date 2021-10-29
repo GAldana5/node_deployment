@@ -5,6 +5,7 @@ const Article = require('./DB_models/article') // Database model
 const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
+const timeout = require('connect-timeout')
 app.use(timeout('5s'))
 
 //Importar variables de entorno
